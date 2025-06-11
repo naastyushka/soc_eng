@@ -8,7 +8,10 @@
     <meta name="keywords" content="контакти, телефон, email, адреса, зворотний зв'язок">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="canonical" href="https://ваш-username.github.io/назва-репозиторію/contact.html">
+    <link rel="canonical" href="https://naastyushka.github.io/soc_eng/contact.html">
+    
+    <!-- Google reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <header>
@@ -78,7 +81,7 @@
 
                     <div class="contact-form">
                         <h2>Напишіть нам</h2>
-                        <form action="#" method="post">
+                        <form action="#" method="post" onsubmit="return validateRecaptcha()">
                             <div class="form-group">
                                 <label for="name">Ваше ім'я *</label>
                                 <input type="text" id="name" name="name" required>
@@ -124,6 +127,11 @@
                                 <textarea id="message" name="message" rows="5" required placeholder="Розкажіть детальніше про ваш проект..."></textarea>
                             </div>
 
+                            <!-- Google reCAPTCHA віджет -->
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6Lc9Ul0rAAAAAPcoG7uMUzLUW-Up9TV0w8EyGMF6"></div>
+                            </div>
+
                             <div class="form-group">
                                 <label class="checkbox-label">
                                     <input type="checkbox" name="privacy" required>
@@ -154,5 +162,17 @@
             <p>&copy; 2024 WebStudio. Всі права захищені.</p>
         </div>
     </footer>
+
+    <script>
+        // Функція валідації reCAPTCHA
+        function validateRecaptcha() {
+            var response = grecaptcha.getResponse();
+            if (response.length === 0) {
+                alert('Будь ласка, підтвердіть, що ви не робот');
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>
