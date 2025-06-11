@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Зв'язатися з WebStudio</title>
+    <meta name="description" content="Контактна інформація WebStudio. Телефон, email, адреса офісу. Форма зворотного зв'язку для замовлення послуг.">
+    <meta name="keywords" content="контакти, телефон, email, адреса, зворотний зв'язок">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://ваш-username.github.io/назва-репозиторію/contact.html">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>WebStudio</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="hidden.html">Прихована сторінка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Контакти</h1>
+                <p>Зв'яжіться з нами для обговорення вашого проекту</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <h2>Наші контакти</h2>
+                        
+                        <div class="contact-item">
+                            <h3>Телефон</h3>
+                            <p><a href="tel:+380671234567">+38 (067) 123-45-67</a></p>
+                            <p><a href="tel:+380501234567">+38 (050) 123-45-67</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@webstudio.ua">info@webstudio.ua</a></p>
+                            <p><a href="mailto:sales@webstudio.ua">sales@webstudio.ua</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Адреса офісу</h3>
+                            <address>
+                                м. Київ, вул. Хрещатик, 1<br>
+                                офіс 205, 01001
+                            </address>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Час роботи</h3>
+                            <p>Пн-Пт: 9:00 - 18:00<br>
+                            Сб-Нд: вихідні</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3>Соціальні мережі</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook">Facebook</a>
+                                <a href="#" aria-label="Instagram">Instagram</a>
+                                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                                <a href="#" aria-label="Telegram">Telegram</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Напишіть нам</h2>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Ваше ім'я *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Тип послуги</label>
+                                <select id="service" name="service">
+                                    <option value="">Оберіть послугу</option>
+                                    <option value="corporate">Корпоративний сайт</option>
+                                    <option value="ecommerce">Інтернет-магазин</option>
+                                    <option value="landing">Лендінг сторінка</option>
+                                    <option value="seo">SEO-оптимізація</option>
+                                    <option value="support">Підтримка сайту</option>
+                                    <option value="redesign">Редизайн</option>
+                                    <option value="other">Інше</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Бюджет</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Оберіть бюджет</option>
+                                    <option value="5000-10000">5 000 - 10 000 грн</option>
+                                    <option value="10000-20000">10 000 - 20 000 грн</option>
+                                    <option value="20000-50000">20 000 - 50 000 грн</option>
+                                    <option value="50000+">понад 50 000 грн</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Повідомлення *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Розкажіть детальніше про ваш проект..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    Я згоден з <a href="#" target="_blank">політикою конфіденційності</a>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-primary">Відправити повідомлення</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <h2>Як нас знайти</h2>
+                <div class="map-placeholder">
+                    <p>Тут буде розміщена карта з локацією офісу</p>
+                    <p><strong>Адреса:</strong> м. Київ, вул. Хрещатик, 1, офіс 205</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WebStudio. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
