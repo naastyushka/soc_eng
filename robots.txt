@@ -1,32 +1,25 @@
 User-agent: *
 Allow: /
 Disallow: /hidden.html
-
 # Карта сайту
-Sitemap: https://ваш-username.github.io/назва-репозиторію/sitemap.xml
-
+Sitemap: https://naastyushka.github.io/soc_eng/sitemap.xml
 # Затримка між запитами (в секундах)
 Crawl-delay: 1
-
 # Дозволити індексування основних сторінок
 Allow: /index.html
 Allow: /about.html
 Allow: /services.html
 Allow: /contact.html
 Allow: /css/
-
 # Заборонити індексування приватних файлів
 Disallow: /hidden.html
 Disallow: *.log
 Disallow: /admin/
 Disallow: /temp/
-
 # Спеціальні інструкції для різних роботів
 User-agent: Googlebot
 Allow: /
-
 User-agent: Bingbot
 Allow: /
-
 User-agent: Yandex
 Allow: /
